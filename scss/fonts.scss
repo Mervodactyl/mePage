@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600,300italic,400italic,600italic,700italic,800italic);
+
+@mixin main-text {
+  letter-spacing: -0.07em; // -1px
+  line-height: 1.4em;
+  font-weight: 400;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+@mixin h1-attributes {
+  margin: 0 !important;
+  line-height: 1em;
+  font-weight: 800;
+  font-size: 3em !important;
+}
+
+@mixin h2-attributes {
+  margin: 0 0 15px 0;
+  letter-spacing: -0.07em;
+  line-height: 1.4em;
+  font-weight: 300;
+  font-size: 1.5em;
+}

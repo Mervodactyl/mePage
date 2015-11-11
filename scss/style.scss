@@ -1,0 +1,88 @@
+
+/*  Stylesheet for: 'my-cv'
+*
+*   SCSS
+=============================================================================*/
+
+/* Imports */
+@import "scss_variables_and_mixins";
+@import "fonts";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+    @include border-box;
+    @include main-text;
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin: 2vw;
+  background-color: $section-colour;
+}
+
+.wrapper,
+.row {
+  @extend %clearfix;
+}
+
+.row {
+  padding: $row-padding;
+    @include section-divide;
+}
+
+[class*='column-'] {
+  float: left;
+  padding: 1em;
+  width: 100%;    ///// change to vw/ vh??
+  min-height: 1px;
+}
+
+@media #{$breakpoint-medium} {
+  .wrapper {
+    width: 95vw;
+    max-width: $grid-max-width;
+  }
+  @for $x from 1 through $grid-columns {
+    .column-#{$x} {
+      width: 100vw / $grid-columns * $x;
+    }
+  }
+}
+
+html {
+  background-color: $background-colour;
+}
+
+h1 {
+  @include h1-attributes;
+}
+
+h2 {
+  @include h2-attributes;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+a {
+  display: inline-block;
+}
+
+.intro img {
+  float: left;
+  width: 110px;
+  max-width: 100vw;
+  height: 150px;
+  max-height: 100vh;
+  border: 2vw solid #fff;
+  margin: 0 15px 0 0;
+}
