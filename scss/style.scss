@@ -1,0 +1,108 @@
+
+/*  Stylesheet for: 'my-cv'
+*
+*   SCSS
+=============================================================================*/
+
+/* Imports */
+@import "scss_variables_and_mixins";
+@import "fonts";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+    @include border-box;
+    @include main-text;
+}
+
+.wrapper {
+  margin: 0 auto;
+  margin: 2%;
+  background-color: $section-colour;
+}
+
+.wrapper,
+.row {
+  @extend %clearfix;
+}
+
+.row {
+  padding: $row-padding;
+    @include section-divide;
+}
+
+[class*='column-'] {
+  float: left;
+  padding: 0.5em;
+  width: 100%;    ///// change to vw/ vh??
+  min-height: 1px;
+    // border: 2px solid black;
+}
+
+@media #{$breakpoint-medium} {
+  .wrapper {
+    width: 95%;
+    max-width: $grid-max-width;
+  }
+  @for $x from 1 through $grid-columns {
+    .column-#{$x} {
+      width: 100% / $grid-columns * $x;
+    }
+  }
+}
+
+html {
+  background-color: $background-colour;
+}
+
+h1 {
+  @include h1-attributes;
+}
+
+h2 {
+  @include h2-attributes;
+}
+
+.intro {
+  h2 {
+    @include h2-attributes-skinny;
+  }
+  .me-pic {
+    float: left;
+    width: 110px;
+    max-width: 100%;
+    height: 150px;
+    max-height: 100%;
+    border: 2% solid #fff;
+    margin: 0 15px 0 0;
+  }
+}
+
+
+
+.inline-list {
+  text-align: center;
+  list-style-type: none;
+  li {
+    display: inline-block;
+    margin: 0;
+    img {
+      height: 40px;
+      border: 1px solid black;
+      border-radius: 15%;
+    }
+  }
+}
+
+.bullet-point-list {
+  // text-align: center;
+  list-style-type: none;
+}
+
+
+.contact-icons {
+  height: 30px;
+  vertical-align:middle
+}
