@@ -38,3 +38,17 @@ $row-padding: 15px;
 @mixin section-divide {
   border-bottom: 3px solid #FACC2E;
 }
+
+@mixin standard-list-qualities {
+  text-align: center;
+  list-style-type: none;
+  img {
+    vertical-align: middle
+  }
+}
+
+@mixin inline-list-qualities {
+  li {
+    display: inline-block;
+  }
+}
