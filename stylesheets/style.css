@@ -101,7 +101,7 @@ h2 {
   font-size: 2em !important; }
 
 h3 {
-  margin: 0 !important;
+  margin: 0 0 1em 0 !important;
   font-weight: 800;
   font-size: 1.25em !important; }
 
@@ -204,5 +204,10 @@ span {
 .js-level,
 .photoshop-level {
   width: 70%; }
+
+.job-description {
+  text-align: left; }
+  .job-description li {
+    margin-bottom: 1em; }
 
 /*# sourceMappingURL=style.css.map */

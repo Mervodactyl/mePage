@@ -181,3 +181,10 @@ a {
 .photoshop-level {
   @include level-indicator(70%);
 }
+
+.job-description {
+  text-align: left;
+  li {
+    margin-bottom: 1em;
+  }
+}
