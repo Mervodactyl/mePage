@@ -9,8 +9,9 @@ $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
 
 // Colours
-$background-colour: #FACC2E;
+$main-background-colour: #FACC2E;
 $section-colour: #f0f0f0;
+$skill-bar-colour: #D8D8D8;
 
 // Various
 $row-padding: 15px;
@@ -51,4 +52,10 @@ $row-padding: 15px;
   li {
     display: inline-block;
   }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
 }

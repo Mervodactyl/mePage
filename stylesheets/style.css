@@ -128,7 +128,9 @@ h2 {
   .inline-list img {
     height: 40px;
     border: 1px solid black;
-    border-radius: 15%; }
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
 
 .bullet-point-list {
   text-align: center;
@@ -142,18 +144,33 @@ h2 {
   height: 100%; }
 
 .tech-bars-display {
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
   list-style-type: none;
   text-align: left; }
   .tech-bars-display img {
     vertical-align: middle; }
   .tech-bars-display li {
-    margin-bottom: 1em;
-    border: 1px solid black; }
+    margin-bottom: 1em; }
     .tech-bars-display li h4 {
       margin: 0 0 0.6em 0;
       letter-spacing: -0.07em;
       font-weight: 300; }
-    .tech-bars-display li div {
+    .tech-bars-display li .skill-bar {
+      display: flex;
+      justify-content: left;
       width: 100%;
-      border: 2px solid blue; }
+      height: 7px;
+      background-color: #d8d8d8;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }
+    .tech-bars-display li .skill-level-indicator {
+      align-self: center;
+      width: 80%;
+      height: 3px;
+      background-color: #FACC2E;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px; }

@@ -53,7 +53,7 @@
 }
 
 html {
-  background-color: $background-colour;
+  background-color: $main-background-colour;
 }
 
 h1 {
@@ -92,7 +92,7 @@ h2 {
   img {
     height: 40px;
     border: 1px solid black;
-    border-radius: 15%;
+      @include border-radius(6px);
   }
 }
 
@@ -108,19 +108,29 @@ h2 {
 }
 
 .tech-bars-display {
-  // border: 1px solid black;
+  padding-top: 0;
+  padding-bottom: 0;
     @include standard-list-qualities;
   text-align: left;
-    // @include inline-list-qualities;
     li {
       margin-bottom: 1em;
-      border: 1px solid black;
       h4 {
         @include h4-attributes-caps;
       }
-      div {
+      .skill-bar {
+        display: flex;
+        justify-content: left;
         width: 100%;
-        border: 2px solid blue;
+        height: 7px;
+        background-color: $skill-bar-colour;
+          @include border-radius(5px);
       }
+        .skill-level-indicator {
+          align-self: center;
+          width: 80%;
+          height: 3px;
+          background-color: #FACC2E;
+            @include border-radius(5px);
+        }
     }
 }
