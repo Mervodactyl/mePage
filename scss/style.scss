@@ -27,7 +27,6 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  background-color: $sections-colour;
 }
 
 .wrapper,
@@ -94,6 +93,11 @@ a {
   }
 }
 
+section {
+  background-color: $sections-colour;
+    @include border-radius(9px);
+}
+
 .intro {
   background-color: $intro-section-colour;
   h2 {
@@ -136,10 +140,19 @@ a {
   height:100%;
 }
 
-.project-thumbnail {
-  height: 200px;
-  width: 200px;
-  border: 2px solid black;
+.projects {
+  img:hover {
+    @include glow;
+  }
+  &:active {
+    @include glow;
+  }
+    .project-thumbnail {
+      height: 100%;
+      width: 90%;
+      border: 2px solid black;
+        @include border-radius(6px);
+    }
 }
 
 .tech-bars-display {

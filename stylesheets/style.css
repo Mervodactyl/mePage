@@ -36,8 +36,7 @@ body {
   padding: 2% 2%; }
 
 .wrapper {
-  margin: 0 auto;
-  background-color: #fff; }
+  margin: 0 auto; }
 
 .row {
   padding: 15px;
@@ -127,6 +126,12 @@ a {
   a:active {
     color: #FACC2E; }
 
+section {
+  background-color: #fff;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px; }
+
 .intro {
   background-color: #f0f0f0; }
   .intro h2 {
@@ -165,10 +170,21 @@ a {
 .skills.titles {
   height: 100%; }
 
-.project-thumbnail {
-  height: 200px;
-  width: 200px;
-  border: 2px solid black; }
+.projects img:hover {
+  -webkit-box-shadow: 0px 0px 18px 2px #9e811d;
+  -moz-box-shadow: 0px 0px 18px 2px #9e811d;
+  box-shadow: 0px 0px 18px 2px #9e811d; }
+.projects:active {
+  -webkit-box-shadow: 0px 0px 18px 2px #9e811d;
+  -moz-box-shadow: 0px 0px 18px 2px #9e811d;
+  box-shadow: 0px 0px 18px 2px #9e811d; }
+.projects .project-thumbnail {
+  height: 100%;
+  width: 90%;
+  border: 2px solid black;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
 
 .tech-bars-display {
   padding-top: 0;
