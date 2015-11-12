@@ -10,7 +10,8 @@ $breakpoint-medium: "only screen and (min-width: 30em)";
 
 // Colours
 $main-background-colour: #FACC2E;
-$section-colour: #f0f0f0;
+$intro-section-colour: #f0f0f0;
+$sections-colour: #fff;
 $skill-bar-colour: #D8D8D8;
 $skill-level-colour: #FACC2E;
 
@@ -46,6 +47,21 @@ $row-padding: 15px;
   list-style-type: none;
   img {
     vertical-align: middle
+  }
+}
+
+@mixin anchor-standard-qualities {
+  a:link {
+
+  }
+  a:visited {
+
+  }
+  a:hover {
+
+  }
+  a:active {
+
   }
 }
 

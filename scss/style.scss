@@ -27,7 +27,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  background-color: $section-colour;
+  background-color: $sections-colour;
 }
 
 .wrapper,
@@ -59,9 +59,6 @@ body {
   }
 }
 
-section {
-}
-
 h1 {
   @include h1-attributes;
 }
@@ -70,11 +67,28 @@ h2 {
   @include h2-attributes;
 }
 
+h3 {
+  @include h3-attributes;
+}
+
 h4 {
-  @include h4-attributes-caps;
+  @include h4-attributes;
+}
+
+ul {
+  @include standard-list-qualities;
+}
+
+span {
+  font-weight: 700;
+}
+
+a {
+  @include anchor-standard-qualities;
 }
 
 .intro {
+  background-color: $intro-section-colour;
   h2 {
     @include h2-attributes-skinny;
   }
@@ -97,7 +111,6 @@ h4 {
 
 .inline-list {
   margin-top: 10px;
-    @include standard-list-qualities;
     @include inline-list-qualities;
   img {
     height: 40px;
@@ -107,7 +120,6 @@ h4 {
 }
 
 .bullet-point-list {
-  @include standard-list-qualities;
   img {
     height: 30px;
   }
@@ -120,7 +132,6 @@ h4 {
 .tech-bars-display {
   padding-top: 0;
   padding-bottom: 0;
-    @include standard-list-qualities;
   text-align: left;
   li {
     margin-bottom: 1em;
@@ -133,7 +144,6 @@ h4 {
         @include border-radius(5px);
       .skill-level-indicator {
         align-self: center;
-        // width: 80%;
         height: 3px;
         background-color: $skill-level-colour;
           @include border-radius(5px);

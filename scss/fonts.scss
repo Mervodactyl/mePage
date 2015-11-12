@@ -27,7 +27,13 @@
   font-size: 1.5em;
 }
 
-@mixin h4-attributes-caps {
+@mixin h3-attributes {
+  margin: 0 !important;
+  font-weight: 800;
+  font-size: 1.25em !important;
+}
+
+@mixin h4-attributes {
   margin: 0 0 0.6em 0;
   letter-spacing: -0.07em;
   font-weight: 300;
