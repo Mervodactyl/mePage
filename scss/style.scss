@@ -133,11 +133,41 @@ h4 {
         @include border-radius(5px);
       .skill-level-indicator {
         align-self: center;
-        width: 80%;
+        // width: 80%;
         height: 3px;
-        background-color: #FACC2E;
+        background-color: $skill-level-colour;
           @include border-radius(5px);
       }
     }
   }
+}
+
+.responsive-level,
+.vertical-level,
+.git-level,
+.pair-level,
+.creative-level,
+.communicator-level {
+  @include level-indicator(90%);
+}
+
+.jquery-level,
+.sql-level {
+  @include level-indicator(75%);
+}
+
+.css-level,
+.testing-level,
+.tdd-level {
+  @include level-indicator(80%);
+}
+
+.html-level {
+  @include level-indicator(85%);
+}
+
+.ruby-level,
+.js-level,
+.photoshop-level {
+  @include level-indicator(70%);
 }

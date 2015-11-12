@@ -12,6 +12,7 @@ $breakpoint-medium: "only screen and (min-width: 30em)";
 $main-background-colour: #FACC2E;
 $section-colour: #f0f0f0;
 $skill-bar-colour: #D8D8D8;
+$skill-level-colour: #FACC2E;
 
 // Various
 $row-padding: 15px;
@@ -58,4 +59,8 @@ $row-padding: 15px;
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
           border-radius: $radius;
+}
+
+@mixin level-indicator($width) {
+  width: $width;
 }

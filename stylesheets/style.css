@@ -171,11 +171,35 @@ h4 {
       border-radius: 5px; }
       .tech-bars-display li .skill-bar .skill-level-indicator {
         align-self: center;
-        width: 80%;
         height: 3px;
         background-color: #FACC2E;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px; }
+
+.responsive-level,
+.vertical-level,
+.git-level,
+.pair-level,
+.creative-level,
+.communicator-level {
+  width: 90%; }
+
+.jquery-level,
+.sql-level {
+  width: 75%; }
+
+.css-level,
+.testing-level,
+.tdd-level {
+  width: 80%; }
+
+.html-level {
+  width: 85%; }
+
+.ruby-level,
+.js-level,
+.photoshop-level {
+  width: 70%; }
 
 /*# sourceMappingURL=style.css.map */
