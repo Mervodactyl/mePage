@@ -119,6 +119,14 @@ ul {
 span {
   font-weight: 700; }
 
+a {
+  color: #9E811D;
+  text-decoration: none; }
+  a:hover {
+    text-shadow: 0 0 2px #FACC2E; }
+  a:active {
+    color: #FACC2E; }
+
 .intro {
   background-color: #f0f0f0; }
   .intro h2 {
@@ -209,5 +217,8 @@ span {
   text-align: left; }
   .job-description li {
     margin-bottom: 1em; }
+
+.bottom-row {
+  border-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

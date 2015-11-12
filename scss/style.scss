@@ -84,7 +84,14 @@ span {
 }
 
 a {
-  @include anchor-standard-qualities;
+  color: $link-font-colour;
+  text-decoration: none;
+  &:hover {
+    text-shadow: 0 0 2px $skill-level-colour;
+  }
+  &:active {
+    color: $main-background-colour;
+  }
 }
 
 .intro {
@@ -187,4 +194,8 @@ a {
   li {
     margin-bottom: 1em;
   }
+}
+
+.bottom-row {
+  border-bottom: 0;
 }

@@ -14,6 +14,7 @@ $intro-section-colour: #f0f0f0;
 $sections-colour: #fff;
 $skill-bar-colour: #D8D8D8;
 $skill-level-colour: #FACC2E;
+$link-font-colour: #9E811D;
 
 // Various
 $row-padding: 15px;
@@ -39,7 +40,7 @@ $row-padding: 15px;
           box-sizing: border-box;
 }
 @mixin section-divide {
-  border-bottom: 3px solid #FACC2E;
+  border-bottom: 3px solid $main-background-colour;
 }
 
 @mixin standard-list-qualities {
@@ -47,21 +48,6 @@ $row-padding: 15px;
   list-style-type: none;
   img {
     vertical-align: middle
-  }
-}
-
-@mixin anchor-standard-qualities {
-  a:link {
-
-  }
-  a:visited {
-
-  }
-  a:hover {
-
-  }
-  a:active {
-
   }
 }
 
