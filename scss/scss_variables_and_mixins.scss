@@ -9,12 +9,14 @@ $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
 
 // Colours
-$main-background-colour: #FACC2E;
-$intro-section-colour: #f0f0f0;
+$main-background-colour: #FAC82E;
+// $intro-section-colour: #f0f0f0;
+$intro-section-colour: rgba(230, 126, 34,1.0);
 $sections-colour: #fff;
 $skill-bar-colour: #D8D8D8;
-$skill-level-colour: #FACC2E;
-$link-font-colour: #9E811D;
+// $skill-level-colour: #FACC2E;
+$skill-level-colour: rgb(245,134,36);
+$link-font-colour: $skill-level-colour;
 
 // Various
 $row-padding: 15px;
@@ -37,12 +39,17 @@ $row-padding: 15px;
 @mixin border-box {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 @mixin section-divide {
   border-bottom: 3px solid $main-background-colour;
 }
+
+// @mixin small-section-divide {
+//   border-bottom: 3px solid $main-background-colour;
+// }
 
 @mixin standard-list-qualities {
   text-align: center;
@@ -61,13 +68,14 @@ $row-padding: 15px;
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
+       -o-border-radius: $radius;
           border-radius: $radius;
 }
 
 @mixin glow {
-  -webkit-box-shadow: 0px 0px 18px 2px rgba(158,129,29,1);
-     -moz-box-shadow: 0px 0px 18px 2px rgba(158,129,29,1);
-          box-shadow: 0px 0px 18px 2px rgba(158,129,29,1);
+  // -webkit-box-shadow: 0px 0px 18px 2px rgba(192, 57, 43,1.0);
+    //  -moz-box-shadow: 0px 0px 18px 2px rgba(158,129,29,1);
+          box-shadow: 0px 0px 18px 2px rgb(245,134,36);
 }
 
 @mixin level-indicator($width) {

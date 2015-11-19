@@ -5,6 +5,7 @@
   line-height: 1.4em;
   font-weight: 400;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  // color: rgba(44, 62, 80,1.0);
 }
 
 @mixin h1-attributes {
@@ -12,12 +13,14 @@
   line-height: 1em;
   font-weight: 800;
   font-size: 3em !important;
+
 }
 
 @mixin h2-attributes {
   margin: 0 !important;
   font-weight: 800;
   font-size: 2em !important;
+  color: rgb(35,38,46);
 }
 
 @mixin h2-attributes-skinny {
@@ -25,16 +28,19 @@
   letter-spacing: -0.07em;
   font-weight: 300;
   font-size: 1.5em;
+  color: rgb(35,38,46);
 }
 
 @mixin h3-attributes {
   margin: 0 0 1em 0 !important;
   font-weight: 800;
   font-size: 1.25em !important;
+  color: rgb(35,38,46);
 }
 
 @mixin h4-attributes {
   margin: 0 0 0.6em 0;
   letter-spacing: -0.07em;
   font-weight: 300;
+  color: rgb(35,38,46);
 }
