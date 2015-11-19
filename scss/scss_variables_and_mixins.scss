@@ -9,14 +9,32 @@ $breakpoint-small: "only screen and (min-width: 20em)";
 $breakpoint-medium: "only screen and (min-width: 30em)";
 
 // Colours
+$text-colour: rgba(35,38,46, 1);
+$inverted-text-colour: rgba(255, 255, 255, 0.9);
+
+$main-colour: rgba(230, 126, 34, 1);
+$secondary-colour: rgba(250,200,46, 1);
+
+
+
+$skill-level-colour: rgb(245,134,36);
+
+$link-font-colour: $main-colour;
+
+
+
+
+
+
+
+
+
 $main-background-colour: #FAC82E;
 // $intro-section-colour: #f0f0f0;
 $intro-section-colour: rgba(230, 126, 34,1.0);
-$sections-colour: #fff;
+// $sections-colour: #fff;
 $skill-bar-colour: #D8D8D8;
 // $skill-level-colour: #FACC2E;
-$skill-level-colour: rgb(245,134,36);
-$link-font-colour: $skill-level-colour;
 
 // Various
 $row-padding: 15px;
@@ -43,25 +61,31 @@ $row-padding: 15px;
           box-sizing: border-box;
 }
 
-@mixin section-divide {
-  border-bottom: 3px solid $main-background-colour;
+@mixin profile-img-attributes {
+  float: left;
+  width: 110px;
+  max-width: 100%;
+  height: 150px;
+  max-height: 100%;
 }
 
-// @mixin small-section-divide {
-//   border-bottom: 3px solid $main-background-colour;
-// }
+@mixin profile-img-border {
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+@mixin big-section-divide {
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: $secondary-colour;
+}
 
 @mixin standard-list-qualities {
-  text-align: center;
+  text-align: left;
   list-style-type: none;
   img {
     vertical-align: middle
-  }
-}
-
-@mixin inline-list-qualities {
-  li {
-    display: inline-block;
   }
 }
 

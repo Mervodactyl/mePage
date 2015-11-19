@@ -14,15 +14,12 @@
   margin: 0;
   padding: 0;
     @include border-box;
-    @include main-text;
-}
-
-html {
-  // background-color: $main-background-colour;
 }
 
 body {
   padding: 2% 2%;
+  color: $text-colour;
+    @include main-text;
 }
 
 .wrapper {
@@ -36,7 +33,7 @@ body {
 
 .row {
   padding: $row-padding;
-    @include section-divide;
+    @include big-section-divide;
 }
 
 [class*='column-'] {
@@ -81,7 +78,7 @@ ul {
 span {
   font-weight: 700;
 }
-
+/////////////////////////////////////////////////////////////////////////////
 a {
   color: $link-font-colour;
   text-decoration: none;
@@ -94,45 +91,38 @@ a {
 }
 
 section {
-  background-color: $sections-colour;
-    // @include border-radius(9px);
+  // background-color: $sections-colour;
 }
+/////////////////////////////////////////////////////////////////////////////
 
 .intro {
-  // background-color: $intro-section-colour;
-  // background-color: rgba(231, 76, 60,1.0);
-  background-color: rgba(230, 126, 34,1.0);
-  color: rgba(255, 255, 255, 0.9);
-  h2 {
-    @include h2-attributes-skinny;
-  }
-  .me-pic {
-    float: left;
-    width: 110px;
-    max-width: 100%;
-    height: 150px;
-    max-height: 100%;
-    border: 5px solid rgba(255, 255, 255, 0.9);
-    margin: 0 15px 0 0;
-  }
-  .bio {
-    max-width: 25em;
-  }
+  background-color: $main-colour;
+  color: $inverted-text-colour;
+    h2 {
+      @include h2-attributes-skinny;
+    }
+    .me-pic {
+      margin: 0 15px 0 0;
+        @include profile-img-attributes;
+        @include profile-img-border;
+    }
+    .bio {
+      max-width: 25em;
+    }
 }
 
-.inline-list,
-.bullet-point-list {
-  text-align: left;
-  list-style-type: none;
+.bullet-point-list,
+.inline-list {
+  @include standard-list-qualities;
 }
 
 .inline-list {
   margin-top: 10px;
-    @include inline-list-qualities;
   img {
     height: 40px;
-    // border: 1px solid #fff;
-      // @include border-radius(6px);
+  }
+  li {
+    display: inline-block;
   }
 }
 
