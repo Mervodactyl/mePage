@@ -4,11 +4,11 @@
 
 ## __TL;DR:__
 
-I decided to create a site specifically just to advertise myself
+I decided to create a site specifically dedicated to my CV
 
-The standard Developer resume is traditionally written in Markdown, which for a Front End Developer is highly uninspiring. So unless I decided to use a lot of HTML within my Markdown file, I couldn't see it turning into anything particularly glamorous. Thats why I made a simple but effective version in SCSS
+The standard Developer resume is traditionally written in Markdown, which for a Front End Developer is highly uninspiring. So unless I decided to use a lot of HTML within my [Markdown](https://help.github.com/articles/github-flavored-markdown/) file, I couldn't see it turning into anything particularly glamorous. Thats why I made a simple but effective version in [SCSS](http://sass-lang.com/)
 
- ego points ++++...
+ ego points ++++
 
 Desktop View                                                               |  Mobile View
 :-------------------------------------------------------------------------:|:----------------------------------------------------------------------:
@@ -16,7 +16,7 @@ Desktop View                                                               |  Mo
 
 ## Its hard to be a Front End Dev and only use Markdown...
 
-Using my own CV as a template for this project, I decided to use SCSS again as I am still in love with its Mixins and Variables (having started this love affair in previous exercises). I also wanted a more challenging Grid based project, and since I felt uninspired by the standard developer Markdown resume, it seemed a good idea to find another way to advertise my abilities.
+Using my own CV as a template for this project, I decided to use SCSS again as I am still in love with its [Mixins and Variables](http://sass-lang.com/guide) (having started this love affair in a [previous exercises](https://github.com/Mervodactyl/scssyDigimon)). I also wanted a more challenging Grid based project, and since I felt uninspired by the standard developer Markdown resume, it seemed a good idea to find another way to advertise my abilities.
 
 ## Tools
 
@@ -26,6 +26,8 @@ Using my own CV as a template for this project, I decided to use SCSS again as I
 * Photoshop
 
 ## Mistakes made and lessons learnt
+
+I had the same problem again with SCSS, in that when it came to deciding when to actually implement the use of Mixins etc I found it difficult to deside when it was appropriate. Had I been working on a larger project, I believe it would have made the choices a lot easier (ie scalability and repetition would have mattered)
 
 I wanted to use the Normalize reset as I agree with it more in principal when it comes to cross browser compatibility, however I had to overwrite several font principals when developing this page, so much so that in hindsight I should have used a reset
 
