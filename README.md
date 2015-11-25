@@ -37,6 +37,4 @@ I enjoyed learning how to inverse some of the icons I used in my end design but 
 
 ## Conclusion
 
-Whenever my CV generates an interview:
-
-[![Video screenshot of Xena exclaiming 'I win'](images/readMe/winXena.png "An appropriate response")](https://www.youtube.com/watch?v=vxR-dwQeKOc)
+Surely there are no more formats I need to worry about?....
