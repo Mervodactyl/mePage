@@ -37,4 +37,4 @@ I enjoyed learning how to inverse some of the icons I used in my end design but 
 
 ## Conclusion
 
-Surely there are no more formats I need to worry about?....
+I love the newer Flat UI design and it was fun playing with SCSS again
