@@ -98,6 +98,7 @@ h1 {
 
 h2 {
   margin: 0 !important;
+  line-height: 0.9em;
   font-weight: 800;
   font-size: 2em !important;
   color: #23262e; }
