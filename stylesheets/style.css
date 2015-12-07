@@ -39,7 +39,7 @@ body {
   margin: 0 auto; }
 
 .row {
-  padding: 15px;
+  padding: 1em;
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #fac82e; }
@@ -233,7 +233,21 @@ a {
 .job-description li {
   margin-bottom: 1em; }
 
-.bottom-row {
+.job-specifics p:last-of-type {
+  margin-bottom: 1em; }
+
+.border-bottom-none-row {
   border-bottom: 0; }
+
+.horizontal-padding {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.vertical-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
+.remove-padding {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

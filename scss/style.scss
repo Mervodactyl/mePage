@@ -194,9 +194,27 @@ a {
 }
 
 .job-description li {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
-.bottom-row {
+.job-specifics p:last-of-type {
+  margin-bottom: 1em;
+}
+
+.border-bottom-none-row {
   border-bottom: 0;
+}
+
+.horizontal-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.vertical-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.remove-padding {
+  padding: 0;
 }
