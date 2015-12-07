@@ -191,6 +191,7 @@ a {
 .tech-bars-display {
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 0;
   text-align: left; }
   .tech-bars-display li {
     margin-bottom: 1em; }
@@ -230,10 +231,14 @@ a {
 .photoshop-level {
   width: 70%; }
 
-.job-description li {
+.job-description li, p {
   margin-bottom: 1em; }
 
-.job-specifics p:last-of-type {
+.job-sub-title {
+  padding-top: 0;
+  padding-left: 0; }
+
+.job-sub-title p:last-of-type {
   margin-bottom: 1em; }
 
 .border-bottom-none-row {
