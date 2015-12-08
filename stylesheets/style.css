@@ -229,13 +229,13 @@ a {
 .projects.column-8.column-4 {
   padding-left: 0; }
 
-.work-history .job-block {
+.no-padding {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0; }
 
-.work-history .job-section {
+.top-buffer {
   padding-top: 1em;
   padding-bottom: 0;
   padding-left: 0;
@@ -250,5 +250,8 @@ a {
 
 .job-sub-title p:last-of-type {
   margin-bottom: 1em; }
+
+.divide-small {
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
