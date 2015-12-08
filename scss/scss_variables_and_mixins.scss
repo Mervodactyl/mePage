@@ -79,6 +79,16 @@ $row-padding: 1em;
           box-shadow: 0px 0px 18px 2px rgb(245,134,36);
 }
 
-@mixin level-indicator($width) {
-  width: $width;
+@mixin remove-all-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@mixin layout-padding {
+  padding-top: 1em;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }

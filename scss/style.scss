@@ -12,8 +12,8 @@
 *:before,
 *:after {
   margin: 0;
-  padding: 0;
     @include border-box;
+    @include remove-all-padding;
 }
 
 body {
@@ -33,7 +33,6 @@ body {
 
 .row {
   padding: $row-padding;
-    @include section-divide;
 }
 
 [class*='column-'] {
@@ -53,6 +52,10 @@ body {
       width: 100% / $grid-columns * $x;
     }
   }
+}
+
+.section-highlight {
+  @include section-divide;
 }
 
 h1 {
@@ -164,34 +167,36 @@ a {
   }
 }
 
-.responsive-level,
-.vertical-level,
-.git-level,
-.pair-level,
-.creative-level,
-.communicator-level {
-  @include level-indicator(90%);
+.level-seventy {
+  width: 70%;
 }
 
-.jquery-level,
-.sql-level {
-  @include level-indicator(75%);
+.level-seventy-five{
+  width: 75%;
 }
 
-.css-level,
-.testing-level,
-.tdd-level {
-  @include level-indicator(80%);
+.level-eighty {
+  width: 80%;
 }
 
-.html-level {
-  @include level-indicator(85%);
+.level-eighty-five {
+  width: 85%;
 }
 
-.ruby-level,
-.js-level,
-.photoshop-level {
-  @include level-indicator(70%);
+.level-ninety {
+  width: 90%;
+}
+
+.projects.column-8.column-4 {
+  padding-left: 0;
+}
+
+.work-history .job-block {
+  @include remove-all-padding;
+}
+
+.work-history .job-section {
+  @include layout-padding;
 }
 
 .job-description li, p {
@@ -205,22 +210,4 @@ a {
 
 .job-sub-title p:last-of-type {
   margin-bottom: 1em;
-}
-
-.border-bottom-none-row {
-  border-bottom: 0;
-}
-
-.horizontal-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.vertical-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.remove-padding {
-  padding: 0;
 }
