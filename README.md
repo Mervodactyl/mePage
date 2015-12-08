@@ -27,14 +27,20 @@ Using my own CV as a template for this project, I decided to use SCSS again as I
 
 ## Mistakes made and lessons learnt
 
-I had the same problem again with SCSS, in that when it came to deciding when to actually implement the use of Mixins etc I found it difficult to deside when it was appropriate. Had I been working on a larger project, I believe it would have made the choices a lot easier (ie scalability and repetition would have mattered)
+I love the newer Flat UI design and it was fun playing with SCSS again, but and this is a BIG BUT: this SCSS calculation does not suit certain tablets or mobiles when on landscape position. In my previous projects this hadn't been an issue but came to light using a more complex website design
 
-I wanted to use the Normalize reset as I agree with it more in principal when it comes to cross browser compatibility, however I had to overwrite several font principals when developing this page, so much so that in hindsight I should have used a reset
+I wanted to use the Normalize reset as I agree with it more in principal when it comes to cross browser compatibility, however I had to overwrite (!important) several font principals when developing this page.... so much so that in hindsight I should have used a reset
+
+I had the same problem again with SCSS, in that when it came to deciding when to actually implement the use of Mixins etc I found it difficult to deside when it was appropriate. Had I been working on a larger project, I believe it would have made the choices a lot easier (ie scalability and repetition would have mattered)
 
 This point ties in well with the fact that despite using a Flat UI theme to begin with, I ended up not keeping entirely to the spec as it became apparent that removing some of its key features made this design sleeker and more modern. It is fair to say that 70% of the original design remained, most importantly the font stylings - which are where most of my Normalize.css over rides are
 
 I enjoyed learning how to inverse some of the icons I used in my end design but it was not without much trail and error
 
+The final details on the layout took much longer than planed but neatening up the 'edges' was very rewarding if time consuming
+
 ## Conclusion
 
-I love the newer Flat UI design and it was fun playing with SCSS again
+Don't spend too long away from your project....
+
+![Scss Meme](images/readMe/scssMeme.jpg "Lord of the Rings Meme")
