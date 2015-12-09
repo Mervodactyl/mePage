@@ -27,7 +27,7 @@ Using my own CV as a template for this project, I decided to use SCSS again as I
 
 ## Mistakes made and lessons learnt
 
-I love the newer Flat UI design and it was fun playing with SCSS again, but and this is a BIG BUT: this SCSS calculation does not suit certain tablets or mobiles when on landscape position. In my previous projects this hadn't been an issue but came to light using a more complex website design
+Scss is great but, and this is a __BIG BUT: *this particular SCSS calculation does not suit certain tablet or mobiles devices when set to landscape position*__. In my previous projects this hadn't been an issue but came to light using a more complex website design
 
 I wanted to use the Normalize reset as I agree with it more in principal when it comes to cross browser compatibility, however I had to overwrite (!important) several font principals when developing this page.... so much so that in hindsight I should have used a reset
 
@@ -37,7 +37,7 @@ This point ties in well with the fact that despite using a Flat UI theme to begi
 
 I enjoyed learning how to inverse some of the icons I used in my end design but it was not without much trail and error
 
-The final details on the layout took much longer than planed but neatening up the 'edges' was very rewarding if time consuming
+Neatening up the design and 'edges' was very rewarding, but it took longer than planned because I had been absent from the project for a while and had forgotten the layout etc
 
 ## Conclusion
 
