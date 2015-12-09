@@ -27,7 +27,7 @@ Using my own CV as a template for this project, I decided to use SCSS again as I
 
 ## Mistakes made and lessons learnt
 
-Scss is great but, and this is a __BIG BUT: *this particular SCSS calculation does not suit certain tablet or mobiles devices when set to landscape position*__. In my previous projects this hadn't been an issue but came to light using a more complex website design
+Scss is great but, and this is a __BIG BUT: *this particular SCSS calculation does not suit certain tablet or mobile devices when set to landscape position*__. In my previous projects this hadn't been an issue but came to light using a more complex website design
 
 I wanted to use the Normalize reset as I agree with it more in principal when it comes to cross browser compatibility, however I had to overwrite (!important) several font principals when developing this page.... so much so that in hindsight I should have used a reset
 
